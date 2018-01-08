@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace HighAndLow
 {
-    class Program
+    public class Program
     {
-        private static string HighAndLow(string value)
+        public static string HighAndLow(string value)
         {
-            String[] substrings = value.Split();
-            int[] nums = substrings.Select(int.Parse).ToArray();
+            int[] nums = value.Split().Select(int.Parse).ToArray();
+            //int[] nums = substrings.Select(int.Parse).ToArray();
             return nums.Max() + " " + nums.Min();
         }
 
