@@ -16,7 +16,8 @@ namespace HighAndLow.Tests
         {
             //Assert.Fail();
             Assert.AreEqual("42 -9", Program.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
-            Assert.AreEqual("42 -9", Program.HighAndLow("0 999 8888 sss"));
+            Assert.AreEqual("8888 0", Program.HighAndLow("0 999 8888"));
+            //Assert.ThrowsException(Program.HighAndLow("0 1 2 3 4 5 h"));
 
         }
     }
